@@ -13,10 +13,11 @@ async function appendData() {
 
   for(let i = 0; i < json.length; i ++) {
     let div = document.createElement("div");
-    let img = document.createElement("img");
-    div.innerHTML = '<img src="' + json[i].articles[0].image + '">' + '</br>' +
-                    json[i].name + '</br>' +
-                    json[i].articles[0].price +  '</br></br>';
+    div.classList.add('product')
+    
+    div.innerHTML = '<img class="productImage" src="' + json[i].articles[0].image + '">' + 
+                    '<div class="productName">' + json[i].name + '</div>' +
+                    '<div class="productPrice">'+ json[i].articles[0].price + '</div>';
                     
   
     mainContainer.appendChild(div);
