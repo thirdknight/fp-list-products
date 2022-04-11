@@ -1,4 +1,3 @@
-import { component } from "./component";
 // import { logo } from "./logo";
 import "./index.css";
 import "./app.css";
@@ -15,7 +14,10 @@ async function appendData() {
   for(let i = 0; i < json.length; i ++) {
     let div = document.createElement("div");
     let img = document.createElement("img");
-    div.innerHTML = json[i].name + '</br>' + json[i].articles[0].price +  '</br>' + '<img src="' + json[i].articles[0].image + '">' + '</br></br>';
+    div.innerHTML = '<img src="' + json[i].articles[0].image + '">' + '</br>' +
+                    json[i].name + '</br>' +
+                    json[i].articles[0].price +  '</br></br>';
+                    
   
     mainContainer.appendChild(div);
     // var obj = json[i];

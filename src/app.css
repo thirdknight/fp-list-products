@@ -5,7 +5,31 @@
 }
 
 body {
-  font-family: titillium-web, sans-serif;
-  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  /* background-color: var(--background-color); */
+  background-color: grey;
   height: 100vh;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1260px;
+}
+.sectionPadding {
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 700px){
+  .sectionPadding {
+    padding: 4rem;
+  }
+  
+  /* .sectionMargin {
+    margin: 4rem;
+  } */
 }
