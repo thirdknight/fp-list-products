@@ -16,8 +16,10 @@ async function appendData() {
     div.classList.add('product')
     
     div.innerHTML = '<img class="productImage" src="' + json[i].articles[0].image + '">' + 
+                    '<div class="productBody">' +
                     '<div class="productName">' + json[i].name + '</div>' +
-                    '<div class="productPrice">'+ json[i].articles[0].price + '</div>';
+                    '<div class="productPrice">'+ json[i].articles[0].price + '</div>' +
+                    '</div>';
                     
   
     mainContainer.appendChild(div);
