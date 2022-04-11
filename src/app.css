@@ -15,21 +15,41 @@ body {
   height: 100vh;
 }
 
+.app {
+  text-align: center;
+}
+
+.dataGrid {
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 1260px;
 }
+
 .sectionPadding {
   padding: 4rem 2rem;
+}
+
+.productImage {
+  /* max-width: 3rem;
+  min-width: 2rem;
+  object-fit: contain; */
+  height: 90px;
+  /* width: 100%; */
 }
 
 @media screen and (min-width: 700px){
   .sectionPadding {
     padding: 4rem;
   }
-  
-  /* .sectionMargin {
-    margin: 4rem;
-  } */
+  .productImage {
+    /* max-width: 4rem;
+    min-width: 3rem; */
+    height: 180px;
+  }
 }
