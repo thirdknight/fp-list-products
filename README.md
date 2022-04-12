@@ -1,20 +1,15 @@
-// install baber compiler
-npm i @babel/core @babel/preset-env @babel/plugin-proposal-class-properties babel-loader -D 
+Clone this repo and npm install
+npm i
+
+Development server
+npm start
+
+Production build
+npm run build
  
- npm i webpack webpsck-cli -D
- npm i lodash-es  
+ Note: Install http-server globally to deploy a simple server.
+ npm i -g http-server
 
- //build dist Folde
- npm run build
-
-//install loaders
-npm i sass sass-loader style-loader css-loader -D
-
-//install html webpack
-npm i html-webpack-plugin -D
-
-// install webpack dev-server and merge for dev and production
-npm i webpack-dev-server webpack-merge -D
-
-// instal polify
-npm i core-js
+ Features
+  webpack
+  babel
