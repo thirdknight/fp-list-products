@@ -1,15 +1,15 @@
-Clone this repo and npm install
+Clone this repo and npm install =>
 npm i
 
-Development server
+Development server =>
 npm start
 
-Production build
+Production build =>
 npm run build
  
- Note: Install http-server globally to deploy a simple server.
+ Note: Install http-server globally to deploy a simple server. =>
  npm i -g http-server
 
  Features
-  webpack
-  babel
+  /webpack 
+  /babel
