@@ -31,6 +31,11 @@ body {
     text-transform: uppercase;
     background-color: #898989;
 }
+
+#bottleView {
+  display: none;
+}
+
 .dataGrid {
   display: grid;
   grid-gap: 1rem;
@@ -46,14 +51,38 @@ body {
 .sectionPadding {
   padding: 4rem 2rem;
 }
-
 .product {
+  background: var(--fp-blue-color);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+}
+.listProductsDv {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.listProductsDv .product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem; */
+}
+.listProductsBv {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* .product {
   display: flex;
   justify-content: space-between;
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem;
-}
+} */
 
 .productImage {
   object-fit: contain;
@@ -66,9 +95,6 @@ body {
 }
 
 
-#bottleView {
-  display: none;
-}
 
 /* @media screen and (min-width: 576px){
   .dataGrid {
