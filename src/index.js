@@ -1,40 +1,57 @@
-// import { logo } from "./logo";
 import "./index.css";
 import "./app.css";
 
-async function appendData() {
+const dV = document.getElementById("detailView");
+const bV = document.getElementById('bottleView');
+const toggleBtn = document.getElementById('toggle');
+
+toggleBtn.onclick = function() {
+  if(window.getComputedStyle(dV, null).getPropertyValue("display") !== 'none' && window.getComputedStyle(bV, null).getPropertyValue("display") == 'none' ) {
+    dV.style.display = "none";
+    bV.style.display = "block";
+  } else {
+    dV.style.display ="block";
+    bV.style.display = "none";
+  }
+ }
+
+
+async function appendDataDetailView() {
   const response = await fetch('https://flapotest.blob.core.windows.net/test/ProductData.json');
   const json = await response.json();
   // console.log(json[0].name);
-  // console.log(json[0].articles[0].price)
-  // console.log(json[0].articles[0].image)
-
-  let mainContainer = document.getElementById('data');
+  let mainContainer = document.getElementById('listProductsDV');
 
   for(let i = 0; i < json.length; i ++) {
     let div = document.createElement("div");
     div.classList.add('product')
-    
     div.innerHTML = '<img class="productImage" src="' + json[i].articles[0].image + '">' + 
-                    '<div class="productBody">' +
+                    '<div id = "productBody" class="productBody">' +
                     '<div class="productName">' + json[i].name + '</div>' +
                     '<div class="productPrice">'+ json[i].articles[0].price + '</div>' +
                     '</div>';
-                    
-  
     mainContainer.appendChild(div);
     // var obj = json[i];
-    // console.log(obj.name)
-    // console.log(obj.articles[0].price)
-    // console.log(obj.articles[0].image)
-
     
   }
 }
+appendDataDetailView();
 
-appendData();
 
+async function appendDatabottleView() {
+  const response = await fetch('https://flapotest.blob.core.windows.net/test/ProductData.json');
+  const json = await response.json();
+  // console.log(json[0].name);
+  let mainContainer = document.getElementById('listProductsBv');
 
-// document.body.appendChild(component());
-// document.body.appdendChild()
-// document.body.appendChild(logo());
+  for(let i = 0; i < json.length; i ++) {
+    let div = document.createElement("div");
+    div.classList.add('product')
+    div.innerHTML = '<img class="productImage" src="' + json[i].articles[0].image + '">' + 
+                    '<div id = "productBody" class="productBody">';
+                    '</div>';
+    mainContainer.appendChild(div);
+    // var obj = json[i];
+  }
+}
+appendDatabottleView();
