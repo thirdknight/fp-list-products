@@ -8,6 +8,7 @@
   --background-color: var(--white);
   --text-color: var(--black);
   --fp-gray-gradient: radial-gradient(circle at 50% 50%, rgba(165, 165, 165, 1) 0%, rgba(97, 96, 100, 0.93) 89%);
+  --fp-gray-radient-reverse: radial-gradient(circle at 50% 50%, rgba(165, 165, 165, 1) 21%, rgba(97, 96, 100, 0.93) 100%);
 
 
   --base-font-size: 16px;

@@ -14,6 +14,10 @@ body {
   background-color: var(--fp-gray-color);
 }
 
+.header {
+  background: #333;
+  padding: 1.2rem;
+}
 .app {
   text-align: center;
 }
@@ -30,6 +34,10 @@ body {
   margin: 1.5rem;
   text-transform: uppercase;
   background: var(--fp-gray-gradient);
+}
+
+.toggle:hover {
+  background: var(--fp-gray-radient-reverse);
 }
 
 #bottleView {
@@ -68,6 +76,7 @@ body {
 }
 
 .listProductsBv {
+  gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 

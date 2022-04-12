@@ -31,8 +31,6 @@ async function appendDataDetailView() {
                     '<div class="productPrice">'+ json[i].articles[0].price + '</div>' +
                     '</div>';
     mainContainer.appendChild(div);
-    // var obj = json[i];
-    
   }
 }
 appendDataDetailView();
@@ -51,7 +49,6 @@ async function appendDatabottleView() {
                     '<div id = "productBody" class="productBody">';
                     '</div>';
     mainContainer.appendChild(div);
-    // var obj = json[i];
   }
 }
 appendDatabottleView();
