@@ -7,17 +7,9 @@
   --fp-blue-color: #4472c4;
   --background-color: var(--white);
   --text-color: var(--black);
+  --fp-gray-gradient: radial-gradient(circle at 50% 50%, rgba(165, 165, 165, 1) 0%, rgba(97, 96, 100, 0.93) 89%);
+
 
   --base-font-size: 16px;
   --base-line-height: 1.8; /* default value is 1.2*/
-  
-
-
-  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-  --color-bg: #040C18;
-  --color-footer : #031B34;
-  --color-blog: #042c54;
-  --color-text: #81AFDD;
-  --color-subtext: #FF8A71;
 }
